@@ -56,7 +56,7 @@ class ClientTalking implements Runnable
 {
 	Socket selfSocket;
 	DataOutputStream os;
-    DataInputStream is;
+        DataInputStream is;
     //ObjectInputStream oi;
 
 	public ClientTalking(Socket selfSocket) {
@@ -81,8 +81,8 @@ class ClientTalking implements Runnable
 	    		String keyboardInput = br.readLine();
 	    		System.out.println(keyboardInput);
 	    		os.writeUTF( keyboardInput + "\n" );
-	            String n = keyboardInput.toString();
-	            String responseLine = is.readUTF();
+	                String n = keyboardInput.toString();
+	                String responseLine = is.readUTF();
 	           
 	            	
 	            
